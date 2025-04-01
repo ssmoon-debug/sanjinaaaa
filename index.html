@@ -173,12 +173,20 @@
             <h2>Assignments</h2>
             <div class="assignments">
                 <div class="assignment-item">
-                    <a href="https://docs.google.com/document/d/10pm-sKghQUjS3HaAZR_Gx6f7iwxB5yZ8wMoJxH4886o/edit?usp=drive_link" target="_blank" class="assignment-link">Identity Verification</a>
+                    <a href="virtual_library/database_report.html" target="_blank" class="assignment-link">Virtual Library</a>
                     <div class="assignment-actions">
                         <button class="btn btn-rename" onclick="renameAssignment(this)">Rename</button>
                         <button class="btn btn-delete" onclick="deleteAssignment(this)">Delete</button>
                     </div>
-                    <button class="btn btn-download" onclick="window.open('https://docs.google.com/document/d/10pm-sKghQUjS3HaAZR_Gx6f7iwxB5yZ8wMoJxH4886o/edit?usp=drive_link', '_blank')">Download</button>
+                    <button class="btn btn-download" onclick="window.open('virtual_library/database_report.html', '_blank')">Download</button>
+                </div>
+                <div class="assignment-item">
+                    <a href="identity_verification/report.html" target="_blank" class="assignment-link">Identity Verification</a>
+                    <div class="assignment-actions">
+                        <button class="btn btn-rename" onclick="renameAssignment(this)">Rename</button>
+                        <button class="btn btn-delete" onclick="deleteAssignment(this)">Delete</button>
+                    </div>
+                    <button class="btn btn-download" onclick="window.open('identity_verification/report.html', '_blank')">Download</button>
                 </div>
             </div>
         </div>
@@ -187,18 +195,7 @@
             <button class="btn-admin" id="enable-admin" onclick="enableAdminMode()">Enable Admin Mode</button>
             <button class="btn-admin" id="disable-admin" onclick="disableAdminMode()">Disable Admin Mode</button>
         </div>
-
-        <div class="section admin-section">
-            <h2>Admin Panel</h2>
-            <div class="add-assignment">
-                <input type="text" id="assignment-name" placeholder="Assignment Name">
-                <input type="text" id="assignment-link" placeholder="Assignment Link">
-                <button class="btn btn-add" onclick="addAssignment()">Add</button>
-            </div>
-        </div>
     </div>
-
-    <p class="copyright">© 2025 Sanjina. All rights reserved. Life is good.</p>
 
     <script>
         function enableAdminMode() {
@@ -216,44 +213,6 @@
             document.body.classList.remove("admin-mode");
             document.getElementById("enable-admin").style.display = "inline-block";
             document.getElementById("disable-admin").style.display = "none";
-        }
-
-        function addAssignment() {
-            let name = document.getElementById("assignment-name").value.trim();
-            let link = document.getElementById("assignment-link").value.trim();
-            if (!name || !link) {
-                alert("Please enter both assignment name and link.");
-                return;
-            }
-
-            let assignmentList = document.querySelector(".assignments");
-            let newAssignment = document.createElement("div");
-            newAssignment.className = "assignment-item";
-            newAssignment.innerHTML = `
-                <a href="${link}" target="_blank" class="assignment-link">${name}</a>
-                <div class="assignment-actions">
-                    <button class="btn btn-rename" onclick="renameAssignment(this)">Rename</button>
-                    <button class="btn btn-delete" onclick="deleteAssignment(this)">Delete</button>
-                </div>
-                <button class="btn btn-download" onclick="window.open('${link}', '_blank')">Download</button>
-            `;
-            assignmentList.appendChild(newAssignment);
-
-            document.getElementById("assignment-name").value = "";
-            document.getElementById("assignment-link").value = "";
-        }
-
-        function renameAssignment(button) {
-            let newName = prompt("Enter new name:");
-            if (newName) {
-                button.parentElement.previousElementSibling.textContent = newName;
-            }
-        }
-
-        function deleteAssignment(button) {
-            if (confirm("Are you sure you want to delete this assignment?")) {
-                button.closest(".assignment-item").remove();
-            }
         }
     </script>
 </body>
