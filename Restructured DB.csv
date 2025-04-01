@@ -1,0 +1,41 @@
+book_ID,title,author,genre,publication_date,available,user_name,email,last_chekout_date,return_date
+1,Pride and Prejudice,Jane Austen,Classics,1813,TRUE,Shakhzodbek,user2217864@library.com,3/20/2025,3/28/2025
+2,Moby Dick,Herman Melville,Classics,1851,TRUE,HasanOsiul,user2417921@library.com,3/18/2025,4/1/2025
+3,1984,George Orwell,Classics,1949,FALSE,Diana,user2417678@library.com,3/10/2025,4/10/2025
+4,To Kill a Mockingbird,Harper Lee,Classics,1960,TRUE,Hasibul,user2417839@library.com,3/15/2025,4/5/2025
+5,The Great Gatsby,F. Scott Fitzgerald,Classics,1925,FALSE,Salokhiddin,user2417956@library.com,3/12/2025,4/15/2025
+6,Charlotteâ€™s Web,E.B. White,Childrenâ€™s Books,1952,TRUE,MAHEDI,user2417551@library.com,3/22/2025,3/30/2025
+7,The Very Hungry Caterpillar,Eric Carle,Childrenâ€™s Books,1969,TRUE,Jony,user2217837@library.com,3/21/2025,4/12/2025
+8,Matilda,Roald Dahl,Childrenâ€™s Books,1988,FALSE,Joy Ahmed,user3000000@library.com,3/9/2025,4/20/2025
+9,Where the Wild Things Are,Maurice Sendak,Childrenâ€™s Books,1963,TRUE,Mollik Rohan,user2417620@library.com,3/16/2025,4/8/2025
+10,Goodnight Moon,Margaret Wise Brown,Childrenâ€™s Books,1947,FALSE,Norman,user3000001@library.com,3/11/2025,4/18/2025
+11,Harry Potter and the Sorcererâ€™s Stone,J.K. Rowling,Young Adult / Fantasy,1997,TRUE,Behruz,user3000002@library.com,3/19/2025,3/27/2025
+12,The Hunger Games,Suzanne Collins,Young Adult / Fantasy,2008,FALSE,Kahaf,user3000003@library.com,3/8/2025,4/22/2025
+13,Eragon,Christopher Paolini,Young Adult / Fantasy,2002,TRUE,Sanjina,user3000004@library.com,3/14/2025,4/7/2025
+14,Percy Jackson: The Lightning Thief,Rick Riordan,Young Adult / Fantasy,2005,FALSE,Diyora,user2417494@library.com,3/17/2025,4/3/2025
+15,A Wrinkle in Time,Madeleine Lâ€™Engle,Young Adult / Fantasy,1962,TRUE,Luise,user3000005@library.com,3/20/2025,4/14/2025
+16,The Girl with the Dragon Tattoo,Stieg Larsson,Mystery / Thriller,2005,TRUE,Abbos,user2417434@library.com,3/23/2025,3/31/2025
+17,Gone Girl,Gillian Flynn,Mystery / Thriller,2012,FALSE,Wardamarriam,user3000006@library.com,3/6/2025,4/9/2025
+18,The Da Vinci Code,Dan Brown,Mystery / Thriller,2003,TRUE,Samandar,user3000007@library.com,3/13/2025,4/16/2025
+19,And Then There Were None,Agatha Christie,Mystery / Thriller,1939,TRUE,Alina,user3000008@library.com,3/7/2025,4/25/2025
+20,The Silence of the Lambs,Thomas Harris,Mystery / Thriller,1988,FALSE,Islombek,user3000009@library.com,3/5/2025,4/2/2025
+21,Dune,Frank Herbert,Science Fiction,1965,TRUE,Sarthak,user3000010@library.com,3/24/2025,4/21/2025
+22,Enderâ€™s Game,Orson Scott Card,Science Fiction,1985,FALSE,Zhaniya,user3000011@library.com,3/3/2025,4/6/2025
+23,Snow Crash,Neal Stephenson,Science Fiction,1992,TRUE,Saurav,user2417607@library.com,3/2/2025,4/29/2025
+24,Neuromancer,William Gibson,Science Fiction,1984,TRUE,Aimana,user2265116@library.com,3/1/2025,4/23/2025
+25,The Left Hand of Darkness,Ursula K. Le Guin,Science Fiction,1969,FALSE,Abu,user2417515@library.com,2/28/2025,4/4/2025
+26,Sapiens: A Brief History of Humankind,Yuval Noah Harari,Non-Fiction,2011,TRUE,Rohan,user2417908@library.com,2/27/2025,4/28/2025
+27,Educated,Tara Westover,Non-Fiction,2018,FALSE,Sarju Kharel,user3000012@library.com,2/26/2025,4/13/2025
+28,The Immortal Life of Henrietta Lacks,Rebecca Skloot,Non-Fiction,2010,TRUE,Khan,user2417655@library.com,2/25/2025,3/26/2025
+29,Atomic Habits,James Clear,Non-Fiction,2018,FALSE,Vijay,user3000013@library.com,2/24/2025,4/17/2025
+30,Outliers,Malcolm Gladwell,Non-Fiction,2008,TRUE,Kadicha,user3000014@library.com,2/23/2025,4/30/2025
+31,Meditations,Marcus Aurelius,Philosophy / Self-Help,180,TRUE,Shakhzodbek,user2217864@library.com,2/22/2025,4/11/2025
+32,The Art of War,Sun Tzu,Philosophy / Self-Help,-500,FALSE,HasanOsiul,user2417921@library.com,2/21/2025,4/19/2025
+33,The Subtle Art of Not Giving a F*ck,Mark Manson,Philosophy / Self-Help,2016,TRUE,Diana,user2417678@library.com,2/20/2025,4/26/2025
+34,Manâ€™s Search for Meaning,Viktor E. Frankl,Philosophy / Self-Help,1946,FALSE,Hasibul,user2417839@library.com,2/19/2025,4/24/2025
+35,"Thinking, Fast and Slow",Daniel Kahneman,Philosophy / Self-Help,2011,TRUE,Salokhiddin,user2417956@library.com,2/18/2025,4/27/2025
+36,Me Before You,Jojo Moyes,Romance,2012,TRUE,MAHEDI,user2417551@library.com,2/17/2025,3/25/2025
+37,The Notebook,Nicholas Sparks,Romance,1996,FALSE,Jony,user2217837@library.com,2/16/2025,3/29/2025
+38,It Ends With Us,Colleen Hoover,Romance,2016,TRUE,Joy Ahmed,user3000000@library.com,2/15/2025,3/21/2025
+39,Outlander,Diana Gabaldon,Romance,1991,FALSE,Mollik Rohan,user2417620@library.com,2/14/2025,3/22/2025
+40,The Time Travelerâ€™s Wife,Audrey Niffenegger,Romance,2003,TRUE,Sanjina,user3000004@library.com,2/13/2025,3/23/2025

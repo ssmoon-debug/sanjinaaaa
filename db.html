@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1, h2 { color: #2c3e50; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f4f4f4; }
+        .container { max-width: 900px; margin: auto; }
+        .download-btn { display: inline-block; padding: 10px; background: #3498db; color: white; text-decoration: none; border-radius: 5px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Database Report: Structure, Queries, and Analysis</h1>
+        <h2>1. Improving the Database Structure</h2>
+        <p>To enhance efficiency and accuracy, the following improvements were made:</p>
+        <ul>
+            <li>Normalization: Divided into Books, Users, and Authors tables.</li>
+            <li>Added Unique User ID to prevent redundancy.</li>
+            <li>Added Return Date for proper tracking.</li>
+            <li>Replaced Author ID with Birthdate for better readability.</li>
+        </ul>
+        
+        <h2>2. Alternative Primary Keys</h2>
+        <p>Book_ID remains the primary key, while User_ID is used in the Users table.</p>
+        
+        <h2>3. Questions and Queries</h2>
+        <pre>
+1. Is "The Great Gatsby" available?
+   =IF(INDEX(Available, MATCH("The Great Gatsby", Title, 0)), "Yes", "No")
+
+2. Did "Sanjina" borrow a book?
+   =IF(COUNTIF(Borrower, "Sanjina")>0, "Yes", "No")
+
+3. Was any book checked out on March 15, 2025?
+   =IF(COUNTIF(Last_Checkout_Date, "3/15/2025")>0, "Yes", "No")
+
+4. Did any user return a book in April 2025?
+   =IF(COUNTIF(Return_Date, "4/*/2025")>0, "Yes", "No")
+
+5. Is there a book published before 1900?
+   =IF(MIN(Publication_Date)<1900, "Yes", "No")
+        </pre>
+        
+        <h2>Download Database Files</h2>
+        <a href="Restructured_DB.csv" class="download-btn" download>Download Restructured Database</a>
+        <a href="virtual_library.xlsx" class="download-btn" download>Download Initial Database</a>
+        
+        <h2>Database Previews</h2>
+        <h3>Restructured Database (Sample)</h3>
+        <table>
+            <tr><th>Book ID</th><th>Title</th><th>Author</th><th>Publication Year</th><th>Available</th></tr>
+            <tr><td>1</td><td>The Great Gatsby</td><td>F. Scott Fitzgerald</td><td>1925</td><td>Yes</td></tr>
+            <tr><td>2</td><td>1984</td><td>George Orwell</td><td>1949</td><td>No</td></tr>
+        </table>
+        
+        <h3>Initial Database (Sample)</h3>
+        <table>
+            <tr><th>Book ID</th><th>Title</th><th>Author</th><th>Year</th><th>Borrower</th></tr>
+            <tr><td>1</td><td>The Great Gatsby</td><td>F. Scott Fitzgerald</td><td>1925</td><td>Sanjina</td></tr>
+            <tr><td>2</td><td>1984</td><td>George Orwell</td><td>1949</td><td>None</td></tr>
+        </table>
+    </div>
+</body>
+</html>
